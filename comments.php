@@ -37,7 +37,7 @@ if ( post_password_required() ) {
 				)
 			);
 			?>
-               
+		<!--                
             <div class="contact-area">
               <h4 class="mb-5">Leave A Comment</h4>
               <form class="contact-from" action="#" method="post">
@@ -56,7 +56,7 @@ if ( post_password_required() ) {
                   </div>
                 </div>
               </form>
-            </div>
+            </div> -->
 
 
 			<!-- ############## -->

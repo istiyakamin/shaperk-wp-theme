@@ -12,16 +12,22 @@ get_header();
 
 	<main id="primary" class="site-main">
 
-		<?php if ( have_posts() ) : ?>
+	 <!-- Scroll Indicator-->
+			<div id="scrollIndicator"></div>
 
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'shaperk' ), '<span>' . get_search_query() . '</span>' );
-					?>
-				</h1>
-			</header><!-- .page-header -->
+				<div class="breadcrumb--area white-bg-breadcrumb">
+					<div class="container h-100">
+						<div class="row h-100 align-items-center">
+						<div class="col-12">
+							<h4 class="text-muted">SERCH RESULT FOR</h4>
+							<H2><?php print_r(get_search_query()); ?></H2>
+						
+						</div>
+						</div>
+					</div>
+				</div>
+
+		<?php if ( have_posts() ) : ?>
 
 			<?php
 			/* Start the Loop */

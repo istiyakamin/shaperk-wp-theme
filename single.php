@@ -10,6 +10,9 @@
 get_header();
 ?>
 
+<!-- Scroll Indicator-->
+<div id="scrollIndicator"></div>
+
 	<main id="primary" class="site-main">
 		    <!-- Scroll Indicator-->
 			<div id="scrollIndicator"></div>
@@ -56,5 +59,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+// get_sidebar();
 get_footer();

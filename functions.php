@@ -155,15 +155,14 @@ function shaperk_scripts() {
     wp_enqueue_script( 'main-jquery-scrollup','https://shaperk.com/saas/dist/js/default/jquery.scrollup.min.js', array(), _S_VERSION, true);
     wp_enqueue_script( 'main-owl-carousol','https://shaperk.com/saas/dist/js/owl.carousel.min.js', array(), _S_VERSION, true);
     wp_enqueue_script( 'main-imagesloaded','https://shaperk.com/saas/dist/js/imagesloaded.pkgd.min.js', array(), _S_VERSION, true);
-
 	wp_enqueue_script( 'main-isotope','https://shaperk.com/saas/dist/js/default/isotope.pkgd.min.js', array(), _S_VERSION, true);
-	wp_enqueue_script( 'main-magnific-popup','/saas/dist/js/jquery.magnific-popup.min.js', array(), _S_VERSION, true);
-
-
+	wp_enqueue_script( 'main-magnific-popup','https://shaperk.com/saas/dist/js/jquery.magnific-popup.min.js', array(), _S_VERSION, true);
     wp_enqueue_script( 'main-animatedheadline','https://shaperk.com/saas/dist/js/jquery.animatedheadline.min.js', array(), _S_VERSION, true);
     wp_enqueue_script( 'main-wow','https://shaperk.com/saas/dist/js/wow.min.js', array(), _S_VERSION, true);
     wp_enqueue_script( 'main-cookiealert','https://shaperk.com/saas/dist/js/default/cookiealert.js', array(), _S_VERSION, true);
     wp_enqueue_script( 'main-mail','https://shaperk.com/saas/dist/js/default/mail.js', array(), _S_VERSION, true);
+	wp_enqueue_script( 'main-scroll-indicator','https://shaperk.com/saas/dist/js/default/scrollindicator.js', array(), _S_VERSION, true);
+	wp_enqueue_script( 'main-active','https://shaperk.com/saas/dist/js/default/active.js', array(), _S_VERSION, true);
 
 
     // <script src=""></script>
