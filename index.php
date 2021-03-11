@@ -45,7 +45,7 @@ get_header();
 			endif; ?>
 
 			<!-- Blog Area-->
-			<div class="saasbox--blog--area blog-full section-padding-120">
+			<div class="saasbox--blog--area blog-card-page section-padding-120">
 				<div class="container">
 					<div class="row g-5">
 			<?php

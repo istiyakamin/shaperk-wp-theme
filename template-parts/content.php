@@ -13,7 +13,8 @@
 		if ( is_singular() ) : ?>
 		
 		<!-- saasbox Blog Area-->
-	<div class="saasbox--blog--area section-padding-120">
+		
+	<div class="saasbox--blog--area shaperk-single-post-page section-padding-120">
       <div class="container">
         <div class="row justify-content-center">
           <div class="post--like-post"><a href="#"><i class="lni-heart"></i></a><span>267 Like</span></div>
@@ -56,19 +57,15 @@
 		
 		<?php else : ?>
 
-<div class="col-12 col-sm-6 col-lg-4">
-	<div class="card blog-card border-0 no-boxshadow rounded-0"><a class="d-block mb-4" href="<?php the_permalink() ?>">
-
-	<?php shaperk_post_thumbnail(); ?>
-	</a>
-		<div class="post-content">
-			<a class="post-title d-block my-3" href="<?php the_permalink() ?>">
-				<h4 class="h4"><?php the_title(); ?></h4>
-			</a>
-			<p><?php echo wp_trim_words( get_the_content(), 30, '...' ); ?></p>
-		</div>
-	</div>
-</div>
+			<!-- Single Blog Post-->
+			<div class="col-12 col-md-6 col-lg-4">
+            <div class="card blog-card"><a href="<?php the_permalink() ?>"><?php shaperk_post_thumbnail(); ?></a>
+              <div class="post-content p-4"><a class="d-block text-muted mb-2" href="<?php the_permalink() ?>">Sep 21, 2020</a><a class="post-title d-block mb-2" href="<?php the_permalink() ?>">
+                  <h4><?php the_title(); ?></h4></a>
+				  <p><?php echo wp_trim_words( get_the_content(), 30, '...' ); ?></p>
+              </div>
+            </div>
+          </div>
 			
 <?php endif; ?>
 

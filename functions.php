@@ -141,8 +141,9 @@ add_action( 'widgets_init', 'shaperk_widgets_init' );
  */
 function shaperk_scripts() {
 	//CSS
-	wp_enqueue_style( 'shaperk-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'main-shaperk-css', 'https://shaperk.com/saas/dist/style.css');
+	wp_enqueue_style( 'main-shaperk-css', 'https://shaperk.com/saas/dist/style.css', array(), _S_VERSION);
+	wp_enqueue_style( 'shaperk-style', get_stylesheet_uri() );
+
 	//wp_style_add_data( 'shaperk-style', 'rtl', 'replace' );
 
 	//JS
